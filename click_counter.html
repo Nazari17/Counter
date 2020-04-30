@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nazari Click Counter</title>
+    <style>
+        body {
+            font-family: verdana;
+            font-size: 68pt;
+        }
+        .main {
+            text-align: center;
+        }
+        button {
+            font-size: 18pt;
+            width: 400px;
+            height: 80px;
+            color: white;
+            background-color: blueviolet;
+            border-radius: 12px;
+
+        }
+        .clicks {
+            color: aquamarine;
+            text-align: center;
+        }
+    </style>
+
+    <script type="text/javascript">
+        var clicks = 0;
+        function onClick() {
+            clicks++;
+            document.getElementById("clicks").innerHTML = clicks;
+        };
+    </script>
+
+</head>
+    <body>
+
+        <div class="main">
+            <button type="button" onClick="onClick()">Click me</button>
+        </div>
+
+        <p class="clicks">Clicks: <a id="clicks">0</a></p>
+    
+    </body>
+</html>
